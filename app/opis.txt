@@ -1,0 +1,12 @@
+coviddata.py - 	opdpowiada za pobieranie danych ze strony ich rozbior i zapis do bazy danych sql.
+models.py - 	zdefiniowane obiekty sql oraz powiaizania np.: uzytkownia do obserwowanych przez niego krajow
+functions.py - 	funkcje aktywowane przy przyciskaniu przycisków, (Przyciski wysy³aj¹ ukrt¹ wiadomoœæ, nie wiidoczn¹
+		z poziomu czatu)
+		wiadomosci instrukatazowe wysylane przy wcisnieciu przycisku
+routes2.py -	glowne funkcje odpowiadajace za przetworzenie zapytañ POST, przetwoorzenie danych i odpowiedŸ
+rts_qckmsg.py -	slowniki z angileskimi i polskimi przyciskami szybkiej odpowiedzi
+subs.py -	plik ururchamiany co dwie minuty odpowiada za wysylanie wiadomosci do osob ktore obserwuja kraje
+		w roznych trybach (mozna otrzymywac wiadomossc przy zmianie danych kraju ktory sie obserwuje albo
+		co dwie godziny pod warunkiem ze dane obserwowanego kraju ulegly zmianie w tym czasie)
+
+Pozostale plik sa osobno ze wzgledu na kolejnosc "import" pliki konfiiguracyjne albo np.: migratedb.py uzywany do migracji bazy danych
